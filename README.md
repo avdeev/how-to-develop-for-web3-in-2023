@@ -1,4 +1,4 @@
-# Как разрабатывать для Web3 в 2023
+# Как разрабатывать для Web3 в 2023-м
 
 - [Слайды](https://alexey-avdeev.com/web3-for-front-end-developers/)
 
