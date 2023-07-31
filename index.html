@@ -280,10 +280,6 @@
       <img class="cover w" src="pictures/trustwallet.png" alt="" />
     </section>
 
-    <section class="slide clear">
-      <img class="cover h" src="pictures/google_chrome.png" alt="" style="height: 90%" />
-    </section>
-
     <section class="slide">
       <h2 class="shout">Криптовалютные биржи</h2>
     </section>
@@ -292,16 +288,8 @@
       <img class="cover w" src="pictures/uniswap.png" alt="" />
     </section>
 
-    <section class="slide clear">
-      <img class="cover w" src="pictures/1inch.png" alt="" />
-    </section>
-
     <section class="slide">
       <h2 class="shout">Игры</h2>
-    </section>
-
-    <section class="slide clear">
-      <img class="cover w" src="pictures/axie.png" alt="" />
     </section>
 
     <section class="slide clear">
@@ -316,10 +304,6 @@
       <img class="cover w" src="pictures/steemit.png" alt="" />
     </section>
 
-    <section class="slide clear">
-      <img class="cover w" src="pictures/minds.png" alt="" />
-    </section>
-
     <section class="slide">
       <h2 class="shout small">Децентрализованные финансы (DeFi)</h2>
     </section>
@@ -328,28 +312,12 @@
       <img class="cover w" src="pictures/aave.png" alt="" />
     </section>
 
-    <section class="slide clear">
-      <img class="cover w" src="pictures/compound.png" alt="" />
-    </section>
-
     <section class="slide">
       <h2 class="shout">Идентификация</h2>
     </section>
 
     <section class="slide clear">
-      <img class="cover h" src="pictures/ens.png" alt="" />
-    </section>
-
-    <section class="slide clear">
       <img class="cover h" src="pictures/unstopable.png" alt="" />
-    </section>
-
-    <section class="slide clear">
-      <img class="cover h" src="pictures/serto.png" alt="" />
-    </section>
-
-    <section class="slide clear">
-      <img class="cover h" src="pictures/civic.png" alt="" />
     </section>
 
     <section class="slide">
@@ -360,24 +328,12 @@
       <img class="cover h" src="pictures/etherscan.png" alt="" />
     </section>
 
-    <section class="slide clear">
-      <img class="cover h" src="pictures/polygonscan.png" alt="" />
-    </section>
-
     <section class="slide">
       <h2 class="shout small">Коллекционирование</h2>
     </section>
 
     <section class="slide clear">
       <img class="cover h" src="pictures/rarible.png" alt="" />
-    </section>
-
-    <section class="slide clear">
-      <img class="cover h" src="pictures/opensea.png" alt="" />
-    </section>
-
-    <section class="slide clear">
-      <img class="cover h" src="pictures/0xmint.png" alt="" />
     </section>
 
     <section class="slide">
@@ -394,23 +350,23 @@
 
     <!-- https://shardeum.org/blog/what-are-decentralized-applications/#What_are_the_Key_Advantages_of_DApps_over_Traditional_Apps -->
     <section class="slide">
-      <h2 class="shout brand">Преимущества</h2>
+      <h2 class="shout brand">Преимущества Web3</h2>
     </section>
 
     <section class="slide">
-      <h2 class="shout">Открытый исходный код</h2>
+      <h2 class="shout">Сеть децентрализована</h2>
     </section>
 
     <section class="slide">
-      <h2 class="shout">Прозрачность</h2>
+      <h2 class="shout">Не регулируется</h2>
     </section>
 
     <section class="slide">
-      <h2 class="shout">Нулевое время простоя</h2>
+      <h2 class="shout">Платежи встроены</h2>
     </section>
 
     <section class="slide">
-      <h2 class="shout">Сопротивление цензуре</h2>
+      <h2 class="shout">Не требует доверия</h2>
     </section>
 
     <section class="slide">
@@ -477,6 +433,16 @@
     </section>
 
     <section class="slide">
+      <h2 class="shout">
+        <a
+          href="https://etherscan.io/address/0xb1690C08E213a35Ed9bAb7B318DE14420FB57d8C"
+          target="_blank"
+          >Демо</a
+        >
+      </h2>
+    </section>
+
+    <section class="slide">
       <h2 class="shout brand">🆕 Node Provider</h2>
     </section>
 
@@ -528,6 +494,20 @@
     </section>
 
     <section class="slide">
+      <h2>Читаем данные из блокчейна</h2>
+      <pre>
+        <code>import Web3 from 'web3'</code>
+        <code>const web3 = new Web3(<mark>"https://mainnet.infura.io/v3/&lt;API-KEY&gt;"</mark>)</code>
+        <code> </code>
+        <code><mark>web3.eth.getBalance("0x1b3cB81E51011...")</mark>.then(console.log)</code>
+        <code>// result: BigInt(560000000065000000000000)</code>
+        <code> </code>
+        <code><mark>web3.eth.getBlockNumber()</mark>.then(console.log)</code>
+        <code>// result: BigInt(13497160)</code>
+      </pre>
+    </section>
+
+    <section class="slide">
       <h2>Вызываем метод смарт-контракта</h2>
       <pre>
         <code>import Web3 from 'web3'</code>
@@ -555,20 +535,6 @@
     </section>
 
     <section class="slide">
-      <h2>Читаем данные из блокчейна</h2>
-      <pre>
-        <code>import Web3 from 'web3'</code>
-        <code>const web3 = new Web3(<mark>"https://mainnet.infura.io/v3/endpoint"</mark>)</code>
-        <code> </code>
-        <code><mark>web3.eth.getBalance("0x1b3cB81E51011...")</mark>.then(console.log)</code>
-        <code>// result: BigInt(560000000065000000000000)</code>
-        <code> </code>
-        <code><mark>web3.eth.getBlockNumber()</mark>.then(console.log)</code>
-        <code>// result: BigInt(13497160)</code>
-      </pre>
-    </section>
-
-    <section class="slide">
       <h2>Полезные утилиты</h2>
       <pre>
         <code><mark>Web3.utils.sha3("example")</mark></code>
@@ -579,6 +545,10 @@
         <code> </code>
         <code><mark>Web3.utils.padLeft('0x3456ff', 20);</mark> // '0x000000000000003456ff'</code>
       </pre>
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">Демо</h2>
     </section>
 
     <section class="slide">
@@ -612,7 +582,7 @@
         <code>  if (!window.ethereum) return;</code>
         <code>  <mark>await window.ethereum.request({ method: "eth_requestAccounts" });</mark></code>
         <code>  window.web3 = new Web3(window.ethereum);</code>
-        <code>  console.log(`Wallet: ${account.givenProvider.selectedAddress}`);</code>
+        <code>  console.log(`Wallet: ${web3.eth.currentProvider.selectedAddress}`);</code>
         <code>}</code>
       </pre>
     </section>
@@ -758,6 +728,10 @@
     </section>
 
     <section class="slide">
+      <h2 class="shout">Демо</h2>
+    </section>
+
+    <section class="slide">
       <h2 class="shout brand">Деплой</h2>
     </section>
 
@@ -778,6 +752,10 @@
       <img class="cover w" src="pictures/brave-deploy.webp" alt="" />
     </section>
 
+    <section class="slide">
+      <h2 class="shout">Демо</h2>
+    </section>
+
     <!-- Рецепт создания dApps -->
     <section class="slide">
       <h2 class="shout brand">Чеклист</h2>
@@ -785,10 +763,6 @@
 
     <section class="slide clear">
       <img class="cover h" src="pictures/checklist.png" alt="" />
-    </section>
-
-    <section class="slide">
-      <h2 class="shout brand">Демо</h2>
     </section>
 
     <section class="slide">
@@ -821,6 +795,13 @@
     <div class="progress"></div>
 
     <script src="shower/shower.js"></script>
+    <!-- todo: положить в node_modules -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/web3/4.0.3/web3.min.js"
+      integrity="sha512-2oprd2T2vSkAii+dVWi6C+uATbQ1YGmCed6b6msb9Jxi33hsXAbnhwZ9thwCq6ndidZv4P51qaq58uo9b/x4nA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <!-- Copyright © 2021 Yours Truly, Famous Inc. -->
   </body>
 </html>
