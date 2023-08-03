@@ -7,7 +7,7 @@
 <html lang="ru">
   <head>
     <!-- Google Tag Manager -->
-    <script>
+    <!-- <script>
       (function (w, d, s, l, i) {
         w[l] = w[l] || [];
         w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
@@ -18,7 +18,7 @@
         j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
         f.parentNode.insertBefore(j, f);
       })(window, document, "script", "dataLayer", "GTM-P6SW86D");
-    </script>
+    </script> -->
     <!-- End Google Tag Manager -->
     <title>Как разрабатывать для Web3 в 2023-м</title>
     <meta charset="utf-8" />
@@ -110,14 +110,14 @@
   </head>
   <body class="shower list">
     <!-- Google Tag Manager (noscript) -->
-    <noscript
+    <!-- <noscript
       ><iframe
         src="https://www.googletagmanager.com/ns.html?id=GTM-P6SW86D"
         height="0"
         width="0"
         style="display: none; visibility: hidden"
       ></iframe
-    ></noscript>
+    ></noscript> -->
     <!-- End Google Tag Manager (noscript) -->
     <header class="caption">
       <h1>Как разрабатывать для Web3 в 2023-м</h1>
@@ -242,6 +242,48 @@
     </section>
 
     <section class="slide">
+      <h2>Разница</h2>
+      <ul>
+        <li style="font-size: 1.5em">Web1: чтение</li>
+        <li class="next" style="font-size: 1.5em">Web2: чтение и публикация</li>
+        <li class="next" style="font-size: 1.5em">Web3: чтение, публикация и <b>владение</b></li>
+      </ul>
+    </section>
+
+    <section class="slide">
+      <img class="cover h" src="pictures/connect-wallet.png" alt="" />
+    </section>
+
+    <section class="slide clear">
+      <img class="cover w" src="pictures/sing_in_buttons.png" alt="" />
+    </section>
+
+    <!-- https://shardeum.org/blog/what-are-decentralized-applications/#What_are_the_Key_Advantages_of_DApps_over_Traditional_Apps -->
+    <section class="slide">
+      <h2 class="shout brand">Преимущества Web3</h2>
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">Децентрализация</h2>
+    </section>
+
+    <section class="slide clear">
+      <img class="cover h" src="pictures/centralized.jpg" alt="" />
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">Не регулируется</h2>
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">Платежи встроены</h2>
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">Не требует доверия</h2>
+    </section>
+
+    <section class="slide">
       <h2 class="shout brand small">
         Децентрализованное приложение<br /><span style="font-size: 0.7em">(DApps, dApp)</span>
       </h2>
@@ -252,11 +294,16 @@
     </section>
 
     <section class="slide clear">
-      <img class="cover h" src="pictures/centralized.jpg" alt="" />
+      <img
+        class="cover w"
+        src="pictures/1024px-U_(micro)_Torrent_logo.svg.png"
+        alt=""
+        style="width: 70%"
+      />
     </section>
 
     <section class="slide">
-      <h2 class="shout">Примеры</h2>
+      <h2 class="shout">Примеры dApps</h2>
     </section>
 
     <section class="slide">
@@ -294,6 +341,10 @@
 
     <section class="slide clear">
       <img class="cover w" src="pictures/cryptokitties.png" alt="" />
+    </section>
+
+    <section class="slide clear">
+      <img class="cover h" src="pictures/kitties.png" alt="" />
     </section>
 
     <section class="slide">
@@ -346,27 +397,6 @@
 
     <section class="slide clear" style="background-color: #060606">
       <img class="cover h" src="pictures/vknft1.jpg" alt="" />
-    </section>
-
-    <!-- https://shardeum.org/blog/what-are-decentralized-applications/#What_are_the_Key_Advantages_of_DApps_over_Traditional_Apps -->
-    <section class="slide">
-      <h2 class="shout brand">Преимущества Web3</h2>
-    </section>
-
-    <section class="slide">
-      <h2 class="shout">Сеть децентрализована</h2>
-    </section>
-
-    <section class="slide">
-      <h2 class="shout">Не регулируется</h2>
-    </section>
-
-    <section class="slide">
-      <h2 class="shout">Платежи встроены</h2>
-    </section>
-
-    <section class="slide">
-      <h2 class="shout">Не требует доверия</h2>
     </section>
 
     <section class="slide">
@@ -473,10 +503,6 @@
       <h2 class="shout brand">Фронтенд</h2>
     </section>
 
-    <section class="slide clear">
-      <img class="cover h" src="pictures/ethers.js-vs-web3.js_.jpg" alt="" />
-    </section>
-
     <section class="slide">
       <h2>Ethereum Provider</h2>
       <ul>
@@ -490,7 +516,52 @@
     </section>
 
     <section class="slide clear">
+      <img class="cover h" src="pictures/ethers.js-vs-web3.js_.jpg" alt="" />
+    </section>
+
+    <section class="slide clear">
       <img class="cover h" src="pictures/web3js.png" alt="" />
+    </section>
+
+    <section class="slide">
+      <h2 class="shout">Connect wallet</h2>
+    </section>
+
+    <section class="slide">
+      <h2>Connect wallet (1)</h2>
+      <pre>
+        <code>&lt;script <mark>src=&quot;https://.../web3.min.js&quot;</mark>&gt;&lt;/script&gt;</code>
+        <code>&lt;input</code>
+        <code>  type=&quot;button&quot;</code>
+        <code>  value=&quot;Connect Wallet&quot;</code>
+        <code>  onclick=&quot;<mark>connect();</mark>&quot;</code>
+        <code>&gt;</code>
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2>Connect wallet (2)</h2>
+      <pre>
+        <code>async function connect() {</code>
+        <code>  if (!window.ethereum) return;</code>
+        <code>  <mark>await window.ethereum.request({ method: "eth_requestAccounts" });</mark></code>
+        <code>  window.web3 = new Web3(window.ethereum);</code>
+        <code>  console.log(`Wallet: ${web3.eth.currentProvider.selectedAddress}`);</code>
+        <code>}</code>
+      </pre>
+    </section>
+
+    <section class="slide">
+      <h2>Полезные утилиты</h2>
+      <pre>
+        <code><mark>Web3.utils.sha3("example")</mark></code>
+        <code>// '0x6fd43e7cffc31bb581d7421c8698e29aa2bd8e7186a394b85299908b4eb9b175'</code>
+        <code> </code>
+        <code><mark>Web3.utils.toWei('1', 'ether')</mark> // 1000000000000000000</code>
+        <code><mark>Web3.utils.toWei('1', 'gwei')</mark> // 1000000000</code>
+        <code> </code>
+        <code><mark>Web3.utils.padLeft('0x3456ff', 20);</mark> // '0x000000000000003456ff'</code>
+      </pre>
     </section>
 
     <section class="slide">
@@ -531,59 +602,6 @@
         <code> </code>
         <code><mark>const subscription = await contract.events.VALUE_CHANGE();</mark></code>
         <code><mark>subscription.on("data", console.log);</mark></code>
-      </pre>
-    </section>
-
-    <section class="slide">
-      <h2>Полезные утилиты</h2>
-      <pre>
-        <code><mark>Web3.utils.sha3("example")</mark></code>
-        <code>// '0x6fd43e7cffc31bb581d7421c8698e29aa2bd8e7186a394b85299908b4eb9b175'</code>
-        <code> </code>
-        <code><mark>Web3.utils.toWei('1', 'ether')</mark> // 1000000000000000000</code>
-        <code><mark>Web3.utils.toWei('1', 'gwei')</mark> // 1000000000</code>
-        <code> </code>
-        <code><mark>Web3.utils.padLeft('0x3456ff', 20);</mark> // '0x000000000000003456ff'</code>
-      </pre>
-    </section>
-
-    <section class="slide">
-      <h2 class="shout">Демо</h2>
-    </section>
-
-    <section class="slide">
-      <h2 class="shout">Connect wallet</h2>
-    </section>
-
-    <section class="slide">
-      <img class="cover h" src="pictures/connect-wallet.png" alt="" />
-    </section>
-
-    <section class="slide clear">
-      <img class="cover w" src="pictures/sing_in_buttons.png" alt="" />
-    </section>
-
-    <section class="slide">
-      <h2>Connect wallet (1)</h2>
-      <pre>
-        <code>&lt;script <mark>src=&quot;https://.../web3.min.js&quot;</mark>&gt;&lt;/script&gt;</code>
-        <code>&lt;input</code>
-        <code>  type=&quot;button&quot;</code>
-        <code>  value=&quot;Connect Wallet&quot;</code>
-        <code>  onclick=&quot;<mark>connect();</mark>&quot;</code>
-        <code>&gt;</code>
-      </pre>
-    </section>
-
-    <section class="slide">
-      <h2>Connect wallet (2)</h2>
-      <pre>
-        <code>async function connect() {</code>
-        <code>  if (!window.ethereum) return;</code>
-        <code>  <mark>await window.ethereum.request({ method: "eth_requestAccounts" });</mark></code>
-        <code>  window.web3 = new Web3(window.ethereum);</code>
-        <code>  console.log(`Wallet: ${web3.eth.currentProvider.selectedAddress}`);</code>
-        <code>}</code>
       </pre>
     </section>
 
@@ -735,6 +753,13 @@
       <h2 class="shout brand">Деплой</h2>
     </section>
 
+    <section class="slide">
+      <h2>Hardhat</h2>
+      <pre>
+        <code>$ npx hardhat run --network %your-network% <mark>scripts/deploy.js</mark></code>
+      </pre>
+    </section>
+
     <section class="slide clear">
       <img class="cover h" src="pictures/fleek.png" alt="" />
     </section>
@@ -795,13 +820,7 @@
     <div class="progress"></div>
 
     <script src="node_modules/@shower/core/dist/shower.js"></script>
-    <!-- todo: положить в node_modules -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/web3/4.0.3/web3.min.js"
-      integrity="sha512-2oprd2T2vSkAii+dVWi6C+uATbQ1YGmCed6b6msb9Jxi33hsXAbnhwZ9thwCq6ndidZv4P51qaq58uo9b/x4nA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+    <script src="node_modules/web3/dist/web3.min.js"></script>
     <!-- Copyright © 2021 Yours Truly, Famous Inc. -->
   </body>
 </html>
