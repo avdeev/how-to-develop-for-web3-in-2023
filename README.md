@@ -1,6 +1,9 @@
 # Как разрабатывать для Web3 в 2023-м
 
-- [Слайды](https://alexey-avdeev.com/web3-for-front-end-developers/)
+- [Слайды](https://alexey-avdeev.com/how-to-develop-for-web3-in-2023/)
+- [Доклад в программе UDW](https://ural-digital-weekend.ru/#timetable)
+- [Трансляция на канале Владилена Минина](https://www.youtube.com/live/oRJSUI58B0A?feature=share&t=10644)
+- [Видеотрансляция потока «Разработка» — Ural Digital Weekend 2023 (Пермь, 4 августа)](https://www.youtube.com/live/xhHwK-6uyIo?feature=share&t=27311)
 
 Мы знаем термин Web3 уже 9 лет. Все слышали о блокчейне или криптовалютах. Считается, что это новая эпоха развития Интернета, его третья версия.
 
